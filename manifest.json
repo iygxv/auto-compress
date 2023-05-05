@@ -1,0 +1,36 @@
+{
+  "manifest_version": 2,
+  "name": "Auto Compress",
+  "version": "1.0",
+  "description": "Automatically compress images downloaded from lanhuapp to TinyPNG",
+  "author": "guxin",
+  "icons":
+	{
+		"16": "image/icon.png",
+		"48": "image/icon.png",
+		"128": "image/icon.png"
+	},
+  "permissions": [
+    "downloads",
+    "activeTab",
+    "tabs"
+  ],
+  "background": {
+    "page": "background.html"
+  },
+  "browser_action": {
+    "default_icon": "image/icon.png",
+    "default_title": "Auto Compress",
+		"default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [ "*://lanhuapp.com/*" ],
+      "js": [ "content.js" ]
+    }
+  ],
+  "web_accessible_resources": 
+	[
+		"inject.js"
+	]
+}
