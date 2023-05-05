@@ -1,12 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>popup</title>
-</head>
-<body>
- <div class="popup-box"></div>
-</body>
+<html>
+  <head>
+    <title>Auto Compress</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        /* line-height: 1.5; */
+        padding: 20px;
+      }
+
+      .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      label {
+        white-space: nowrap;
+        margin-right: 10px;
+      }
+
+      input[type="checkbox"] {
+        margin-right: 5px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- <h1>Auto Compress</h1> -->
+    <div class="row">
+      <label for="auto-compress-toggle">自动开启下载后压缩</label>
+      <input type="checkbox" id="auto-compress-toggle"/>
+    </div>
+    <script src="./src/content.js"  type="module"></script>
+  </body>
 </html>

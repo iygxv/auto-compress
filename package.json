@@ -1,0 +1,9 @@
+{
+  "name": "auto-compress",
+  "version": "1.0.0",
+  "main": "src/content.js",
+  "repository": "git@github.com:iygxv/auto-compress.git",
+  "author": "zwf <871772825@qq.com>",
+  "license": "MIT",
+  "type": "module"
+}
